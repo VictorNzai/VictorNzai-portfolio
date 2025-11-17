@@ -69,7 +69,12 @@ export const config = {
             skills: [
                 { name: "Node.js", level: "Advanced", hot: true },
                 { name: "MongoDB", level: "Advanced" },
-                { name: "Express.js", level: "Advanced", hot: true }
+                { name: "Express.js", level: "Advanced", hot: true },
+                { name: "MySQL", level: "Advanced" },
+                { name: "PHP", level: "Intermediate" },
+                { name: "Supabase", level: "Intermediate" },
+                { name: "Firebase", level: "Intermediate" },
+                { name: "REST API Design", level: "Advanced" }
             ]
         },
         {
@@ -81,10 +86,27 @@ export const config = {
             skills: [
                 { name: "VS Code", level: "Expert", hot: true },
                 { name: "Postman", level: "Advanced" },
-                { name: "Photoshop", level: "Intermediate" },
-                { name: "Git", level: "Advanced" }
+                // { name: "Photoshop", level: "Intermediate" },
+                { name: "Git", level: "Advanced" },
+                { name: "Figma", level: "Intermediate" }
             ]
-        }
+        },
+        
+    {
+        title: "Cloud & DevOps",
+        icon: <HiBriefcase />,
+        description: "Deployment, hosting & scaling",
+        bgClass: "bg-purple-500/10",
+        iconClass: "text-purple-500",
+        skills: [
+            { name: "AWS", level: "Intermediate", hot: true },
+            { name: "Docker", level: "Intermediate" },
+            { name: "Vercel", level: "Expert" },
+            { name: "Cloudflare", level: "Intermediate" },
+            { name: "CI/CD", level: "Advanced" },
+            { name: "GitHub Actions", level: "Intermediate" }
+        ]
+    },
     ],
     experiences: [
         {

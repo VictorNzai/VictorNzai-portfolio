@@ -4,8 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { HiCode } from 'react-icons/hi';
 import { FaReact, FaNodeJs, FaGithub, FaAws } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiTailwindcss, SiFigma, SiGreensock, SiThreedotjs, SiJavascript, SiMaterialdesign } from 'react-icons/si';
-import { TbBrandFramerMotion } from 'react-icons/tb';
+import { SiExpress, SiMongodb, SiTailwindcss, SiFigma, SiGreensock, SiMaterialdesign, SiTypescript } from 'react-icons/si';
+// import { TbBrandFramerMotion } from 'react-icons/tb';
 
 const skills = [
     { name: "AWS", icon: <FaAws className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
@@ -15,11 +15,9 @@ const skills = [
     { name: "Node.js", icon: <FaNodeJs className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
     { name: "GitHub", icon: <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
     { name: "Tailwind", icon: <SiTailwindcss className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "GSAP", icon: <SiGreensock className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Framer Motion", icon: <TbBrandFramerMotion className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Three.js", icon: <SiThreedotjs className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
+    { name: "Shadcn UI", icon: <SiGreensock className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
+    { name: "TypeScript", icon: <SiTypescript className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-2 sm:col-span-1 md:col-span-2 row-span-1" },
     { name: "Figma", icon: <SiFigma className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
-    { name: "Material UI", icon: <SiMaterialdesign className="w-5 h-5 sm:w-6 sm:h-6" />, size: "col-span-1 row-span-1" },
 ];
 
 const containerAnimation = {

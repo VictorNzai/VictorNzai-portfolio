@@ -79,7 +79,7 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-white/60 text-2xl md:text-4xl"
               >
-I build web that builds brands.              </motion.span>
+I build websites that build brands.              </motion.span>
             </motion.h1>
           </div>
 
@@ -87,8 +87,7 @@ I build web that builds brands.              </motion.span>
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-           Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star.
-          </motion.p>
+Full-stack developer focused on building fast, accessible, and human-centered digital products. I combine clean design with reliable engineering to create software that scales.          </motion.p>
 
           <motion.div
             variants={itemAnimation}
