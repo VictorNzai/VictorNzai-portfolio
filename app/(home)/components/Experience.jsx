@@ -1,7 +1,8 @@
 "use client"
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiBriefcase, HiCalendar } from 'react-icons/hi';
+import { HiBriefcase, HiCalendar, HiExternalLink } from 'react-icons/hi';
+import { FaLinkedin } from 'react-icons/fa';
 import { config } from '@/config';
 
 const containerAnimation = {
@@ -24,6 +25,13 @@ const itemAnimation = {
             ease: [0.23, 1, 0.32, 1]
         }
     }
+};
+
+const getLinkIcon = (label) => {
+    if (label.toLowerCase().includes('linkedin')) {
+        return <FaLinkedin className="w-3.5 h-3.5" />;
+    }
+    return <HiExternalLink className="w-3.5 h-3.5" />;
 };
 
 const ExperienceSection = () => {
@@ -119,6 +127,23 @@ const ExperienceSection = () => {
                                                     <p className="text-sm text-white/60 mb-4">
                                                          {exp.location}
                                                     </p>
+                                                )}
+
+                                                {exp.links && exp.links.length > 0 && (
+                                                    <div className="flex flex-wrap gap-2 mb-4">
+                                                        {exp.links.map((link) => (
+                                                            <a
+                                                                key={`${link.label}-${link.href}`}
+                                                                href={link.href}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="inline-flex items-center gap-1.5 text-xs text-white/80 bg-white/10 hover:bg-white/15 border border-white/20 hover:border-white/40 px-3 py-1.5 rounded-full transition-colors duration-200"
+                                                            >
+                                                                {getLinkIcon(link.label)}
+                                                                <span>{link.label}</span>
+                                                            </a>
+                                                        ))}
+                                                    </div>
                                                 )}
 
                                                 {exp.description && (

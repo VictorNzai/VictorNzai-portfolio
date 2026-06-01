@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { itemAnimation } from './Animations';
 
 export const ProjectCard = ({ project, index }) => (
@@ -33,7 +33,7 @@ export const ProjectCard = ({ project, index }) => (
                     </span>
                 </div>
 
-                <p className="text-sm text-muted-foreground line-clamp-2">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                     {project.description}
                 </p>
 
@@ -49,23 +49,45 @@ export const ProjectCard = ({ project, index }) => (
                 </div>
             </div>
 
-            <div className="flex items-center gap-3 pt-4">
-                <Button
-                    size="sm"
-                    className="rounded-full h-8 px-4 text-xs"
-                    asChild
-                >
-                    <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2"
-                    >
-                        Live Demo
-                        <FaExternalLinkAlt className="w-3 h-3" />
-                    </a>
-                </Button>
-            </div>
+            {(project.demo || project.github) && (
+                <div className="flex items-center gap-3 pt-4">
+                    {project.demo && (
+                        <Button
+                            size="sm"
+                            className="rounded-full h-8 px-4 text-xs"
+                            asChild
+                        >
+                            <a
+                                href={project.demo}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2"
+                            >
+                                Live Demo
+                                <FaExternalLinkAlt className="w-3 h-3" />
+                            </a>
+                        </Button>
+                    )}
+                    {project.github && (
+                        <Button
+                            size="sm"
+                            variant="outline"
+                            className="rounded-full h-8 px-4 text-xs"
+                            asChild
+                        >
+                            <a
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2"
+                            >
+                                View Code
+                                <FaGithub className="w-3 h-3" />
+                            </a>
+                        </Button>
+                    )}
+                </div>
+            )}
         </div>
     </motion.div>
 );

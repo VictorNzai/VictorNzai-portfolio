@@ -61,7 +61,7 @@ const HeroSection = () => {
             className="inline-flex items-center space-x-2 bg-secondary/10 border-[1.8px] border-zinc-900/70 px-4 py-2 rounded-full text-primary backdrop-blur-sm"
           >
             <HiCode className="w-5 h-5" />
-            <span className="text-sm font-medium">Welcome to my portfolio</span>
+            <span className="text-sm font-medium">Frontend Lead · Open to Remote</span>
           </motion.div>
 
           <div className="space-y-4">
@@ -79,7 +79,8 @@ const HeroSection = () => {
                 variants={textAnimation}
                 className="block text-white/60 text-2xl md:text-4xl"
               >
-I build websites that build brands.              </motion.span>
+                I build products people depend on.
+              </motion.span>
             </motion.h1>
           </div>
 
@@ -87,7 +88,11 @@ I build websites that build brands.              </motion.span>
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-Full-stack developer focused on building fast, accessible, and human-centered digital products. I combine clean design with reliable engineering to create software that scales.          </motion.p>
+            Frontend Engineering Lead with experience shipping across healthcare,
+            logistics, and fintech. I own the full frontend lifecycle — from
+            architecture and API integration to team leadership and production
+            delivery. Currently building at Syntahub and Foundly Inc.
+          </motion.p>
 
           <motion.div
             variants={itemAnimation}

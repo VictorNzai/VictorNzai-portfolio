@@ -17,33 +17,44 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "FoodShare-Nairobi - Food Donation Platform",
-            description: "A full-stack web platform connecting food donors with charitable organizations to reduce waste and fight hunger in Kenya.",
+            title: "Admobi — GPS-Verified Digital Advertising Network",
+            description:
+                "Jan 2026 – Present. A DOOH advertising platform for Nairobi, Mombasa, and Kisumu — placing verified ads on taxi tops and delivery bikes. Built campaign management workflows, dynamic content rendering, media upload, and reusable UI components. Set up GitHub Actions CI/CD in a Turborepo TypeScript monorepo.",
+            image: "/projects/project-4.webp",
+            technologies: ["Next.js", "TypeScript", "TailwindCSS", "Turborepo", "GitHub Actions", "Framer Motion"],
+            github: null,
+            demo: "https://admobihq.com/"
+        },
+        {
+            id: 2,
+            title: "FoodShare Nairobi — Food Donation Platform",
+            description:
+                "Apr–Aug 2025. Web platform connecting food donors with verified charitable institutions in Nairobi. Led architecture for Donor/Charity/Admin roles, two-stage verification, a feedback/rating system, and an admin dashboard. Implemented bcrypt auth, email verification via Nodemailer, and Docker deployment.",
             image: "/projects/project-1.webp",
-            technologies: ["HTML", "CSS", "JavaScript", "Express", "Node.js", "MySQL"],
+            technologies: ["Node.js", "Express", "Docker", "Nodemailer", "PostgreSQL", "Postman"],
             github: "https://github.com/VictorNzai/FoodShare-Nairobi",
             demo: "https://foodsharenairobi.netlify.app/"
         },
         {
-            id: 2,
-            title: "CheapThrills – Budget Travel App",
-            description:
-              "A modern travel platform that helps users discover and book affordable travel experiences with a clean UI, responsive design, and seamless browsing.",
-            image: "/projects/project-2.webp", 
-            technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Daraja API"],
-            github: "https://github.com/VictorNzai/Software-Engineering-Project", 
-            demo: "https://cheapthrillsse.vercel.app/"
-          },
-          {
             id: 3,
+            title: "CheapThrills — Travel Booking System",
+            description:
+                "Apr–Aug 2024. Team-built web app for booking budget-friendly travel packages. Focused on UX and integrated the MPESA Daraja API so travelers could search, select, and pay without leaving the platform.",
+            image: "/projects/project-2.webp",
+            technologies: ["React", "TailwindCSS", "MPESA Daraja API"],
+            github: "https://github.com/VictorNzai/Software-Engineering-Project",
+            demo: "https://cheapthrillsse.vercel.app/"
+        },
+        {
+            id: 4,
             title: "Recipe Website - Restaurant Platform",
             description:
-              "A beautiful restaurant platform featuring digital menus, elegant UI, smooth navigation, and a modern food-themed experience for customers.",
-            image: "/projects/project-3.webp", 
+                "A restaurant platform featuring digital menus, elegant UI, smooth navigation, and a modern food-themed experience for customers.",
+            image: "/projects/project-3.webp",
             technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-            github: "https://github.com/VictorNzai/Recipe-Website", 
+            github: "https://github.com/VictorNzai/Recipe-Website",
             demo: "https://culinaryhaven.vercel.app/"
-          },
+        },
     ],
     skills: [
         {
@@ -111,33 +122,57 @@ export const config = {
     experiences: [
         {
             position: "Frontend Engineering Lead",
-            company: "Foundly Inc",
-            period: "2025 - Present",
-            location: "New York, United States (Remote)",
-            description: "Leading the development of customer-facing and institutional dashboards for a lost-and-found platform focused on building infrastructure for trust. Driving frontend architecture, performance optimization, and seamless integration with machine learning services.",
+            company: "Syntahub",
+            period: "January 2026 - Present",
+            location: "Nairobi, Kenya (Remote)",
+            description:
+                "Owns the frontend across Syntahub's product suite — a fleet management system and Sazara, a multi-tenant POS platform. Builds the interfaces operators actually rely on daily across logistics and retail.",
             responsibilities: [
-                "Leading development of modular, responsive dashboards using React.js and TailwindCSS",
-                "Translating design prototypes into production-grade UI with a focus on accessibility and speed",
-                "Building interactive features including item submissions, map views, match confidence scoring, and claim verification flows",
-                "Collaborating with backend and ML teams to integrate APIs and AI outputs smoothly",
-                "Implementing modern frontend architecture using Next.js, TypeScript, and ShadCN/UI"
+                "Architected reusable component systems for Sazara's multi-tenant POS, supporting dashboards and workflows across logistics and retail verticals",
+                "Integrated real-time GPS and map-based tracking into fleet modules, giving operators live vehicle visibility",
+                "Partnered with backend engineers to design and consume REST APIs, translating complex data models into intuitive UIs",
+                "Maintained code quality across multiple active product branches via PR reviews and cross-browser debugging"
             ],
-            technologies: ["React", "Next.js", "TypeScript", "TailwindCSS", "ShadCN/UI", "JavaScript"]
+            technologies: ["React", "Next.js", "TypeScript", "TailwindCSS", "REST APIs"],
+            links: [
+                { label: "LinkedIn", href: "https://www.linkedin.com/company/synthahub/" },
+                { label: "Sazara", href: "https://sazara.co.ke/" },
+                { label: "Sazara POS", href: "https://pos.sazara.co.ke/" },
+            ],
+        },
+        {
+            position: "Frontend Engineering Lead",
+            company: "Foundly Inc",
+            period: "June 2025 - Present",
+            location: "New York, United States (Remote)",
+            description:
+                "Building the trust infrastructure for a lost-and-found platform — from item reporting and claim flows to ML-powered match confidence scores.",
+            responsibilities: [
+                "Translated design prototypes into modular, accessible, production-grade interfaces using Next.js, TypeScript, and ShadCN/UI",
+                "Built core platform features end-to-end: item submission, map views, match scores, and claim verification portals",
+                "Integrated AI/ML outputs from backend specialists into seamless user-facing experiences",
+                "Led frontend development of customer-facing and institutional dashboards with TailwindCSS and Supabase"
+            ],
+            technologies: ["Next.js", "TypeScript", "TailwindCSS", "ShadCN/UI", "Firebase", "Supabase", "Node.js"],
+            links: [
+                { label: "LinkedIn", href: "https://www.linkedin.com/company/foundlyhq/" },
+                { label: "Foundly", href: "https://foundlyhq.com/" },
+            ],
         },
         {
             position: "Software Engineering Extern",
             company: "Jackal Tech Ltd",
             period: "March 2025 - August 2025",
             location: "New York, United States (Remote)",
-            description: "Contributed to the development of JackalCare, a digital health platform serving hospitals and patients across Rwanda. Designed and built full-stack solutions that improved medical data access, insurance verification, and AI-powered health recommendations.",
+            description:
+                "Led a 4–5 person engineering team building JackalCare — a digital health platform serving hospitals and patients in Rwanda.",
             responsibilities: [
-                "Led cross-functional teams of 4–5 engineers through sprint planning and code reviews",
-                "Architected and built smart medical card features enabling real-time patient record access",
-                "Implemented secure authentication, integrated payments, and RESTful APIs",
-                "Built React- and Node-based systems with MongoDB backend architecture",
-                "Maintained high code-quality standards and mentored junior developers"
+                "Architected a smart medical card system handling real-time patient records, insurance verification, and AI-powered health recommendations",
+                "Ran agile ceremonies: sprint planning, deployments, API design reviews, and cross-team coordination with leadership",
+                "Delivered full-stack features using React, TailwindCSS, Node.js, and MongoDB with secure auth and payment integration",
+                "Enforced code quality through structured reviews and hands-on mentorship of junior engineers"
             ],
-            technologies: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "JavaScript"]
+            technologies: ["React", "TailwindCSS", "Node.js", "MongoDB", "Agile/Scrum"]
         },
     ],
     contactInfo: [
